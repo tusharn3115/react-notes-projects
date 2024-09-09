@@ -1,1 +1,14 @@
 - React nai hme ik syntax diya hai, ki ik function lo usmai html return krodo or react us function ke under return kiya gya html tags and all ko render krwa dega
+
+- now if you will try to pass 2 tags in the function in react it will give us and error because in react we can only pass one tags, so react said you can inclose the other tags into a <div> tag but it was a common problem in react inclosing tags into div again and again, so react allow us to enclose these tags into a empty tag also called fragment.
+
+Eg:- 
+function App(){
+    return(
+        <>  ----> this empty tag is called fragment
+        <h1>Heading 1</h1>
+        <p>Paragraph</p>
+        ...and other tags
+        </>
+    )
+}
