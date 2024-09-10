@@ -45,6 +45,6 @@ function App(){
 
 - but then we create a variable and usmai pura HTML pass krta hu then it works this mean khud ki bnai key react nhi smjhta its has set ot rules and syntax to follow 
 
-- to create an element react gives us React.createElement() method which is by default injected by transpiller
+- to create an element react gives us React.createElement() method which is by default injected by transpiler called Babel
 
 - so here we see how to create a react element in which first parameter is expected a html tag, second param is object and third is direct text and the last comes the variable injections
