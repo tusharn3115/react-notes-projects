@@ -14,3 +14,37 @@ function App(){
 }
 
 - The name of the function's first letter should be capital else the code will give us an error 
+
+
+
+
+
+
+
+// understanding react -
+--------------------------------------------------------------------------
+
+--- Custom Render 
+
+* hmne custom_react folder mai sikne ki koshish kri ki react kese elements ko create krta hai
+1. hmne ik mainContainer bnaya jismai querySelector se tag ko uthaya where we will inject the code 
+
+2. hmne ik khud ka customRender bnaya jismai we select mainContainer and reactElement 
+
+3. reactElement object mai hmne anpa syntax define kna ki phele tag ayega then attributes and then text
+
+4. then hmne customRender function mai sabhi tags, attribute and text ko import and set krna 
+
+5. then customRender mai arguments pass kreke browser per render krwaya
+
+- then hmne dekha ki app.jsx sirf ik method hai toh kya hm main.jsx mai method likh skte hai, and yes we ca write methods in main.jsx and can render it 
+
+- hmne dekha ki hm jo methods bnate hai and react us method ko tree structure/ object bnati hai or usko inject krti hai
+
+- to hm apna element jo bhi toh inject krskte hai but it was not working 
+
+- but then we create a variable and usmai pura HTML pass krta hu then it works this mean khud ki bnai key react nhi smjhta its has set ot rules and syntax to follow 
+
+- to create an element react gives us React.createElement() method which is by default injected by transpiller
+
+- so here we see how to create a react element in which first parameter is expected a html tag, second param is object and third is direct text and the last comes the variable injections

@@ -8,15 +8,18 @@ import App from './App.jsx'
 
 // so here we see how to create a react element in which first parameter is expected a html tag, second param is object and third is direct text and the last comes the variable injections
 
+const anotherUser = "hello react";
 const reactElement = React.createElement(
     'a',
     {href: "http://google.com", target: "_blank"},
-    'click me to visit google !'
+    'click me to visit google !',
+    anotherUser
 )
 
 
 createRoot(document.getElementById('root')).render(
 
-    <App />
+    // <App />
+    reactElement
     
 )
