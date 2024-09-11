@@ -82,4 +82,22 @@ VIRTUAL DOM - what virtual DOM does is, with its help we can keep track of our w
 
 
 
-// React FIBRE ---------------------------------------------------------------------------------
+// React FIBER ---------------------------------------------------------------------------------
+
+- Fiber is the new reconciliation engine introduced in React to improve rendering performance.
+
+- It breaks the rendering work into small units and spreads them over multiple frames, preventing UI blocking.
+
+- Why? It helps React smoothly manage large, complex UIs and updates without freezing the user interface.
+
+
+
+
+
+// Reconciliation ------------------------------------------------------------------------------
+
+- Reconciliation is the process React uses to update the UI efficiently when changes occur in the app.
+
+- React compares the new virtual DOM with the old one, figuring out the differences (called "diffing").
+
+- It then updates only the parts of the real DOM that have changed, making the process faster and less costly.
