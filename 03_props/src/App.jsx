@@ -17,8 +17,8 @@ function App() {
   return (
     <>
     <h1 className='bg-slate-800 text-white p-5 mb-9 rounded text- font-medium'>Props In React</h1>
-    <Card/>
-    <Card/>
+    <Card username = "Tushar" src="https://images.pexels.com/photos/2379005/pexels-photo-2379005.jpeg?auto=compress&cs=tinysrgb&w=600"/>
+    <Card username = "Suraj" src="https://images.pexels.com/photos/1559486/pexels-photo-1559486.jpeg?auto=compress&cs=tinysrgb&w=600"/>
     </>
   )
 }
