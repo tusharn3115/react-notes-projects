@@ -101,3 +101,15 @@ VIRTUAL DOM - what virtual DOM does is, with its help we can keep track of our w
 - React compares the new virtual DOM with the old one, figuring out the differences (called "diffing").
 
 - It then updates only the parts of the real DOM that have changed, making the process faster and less costly.
+
+
+
+
+
+// props --------------------------------------------------------------------------------------
+
+- props components ko reusable bnata hai
+
+- for example: We have made a card and we can keep that card into a component and can reuse it whenever needed
+
+- so you have made the component of card and now you can make as many copyies, but the problem is if you need every card should have different details, there comes the work of props 
