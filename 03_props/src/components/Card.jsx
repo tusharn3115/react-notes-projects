@@ -1,6 +1,8 @@
 import React from 'react'
 
-function Card() {
+function Card(props) {
+    console.log(props);
+    
   return (
     <figure className="md:flex bg-slate-100 rounded-xl p-8 md:p-0 dark:bg-slate-800 mb-5">
   <img className="w-24 h-24 md:w-48 md:h-auto md:rounded-none rounded-full mx-auto" src="https://images.pexels.com/photos/2379005/pexels-photo-2379005.jpeg?auto=compress&cs=tinysrgb&w=600" alt="" width="384" height="512" />

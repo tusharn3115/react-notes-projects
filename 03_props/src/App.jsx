@@ -7,6 +7,13 @@ import Card from './components/card'
 function App() {
   const [count, setCount] = useState(0)
 
+  let obj = {
+    name: "Histesh",
+    age: 21,
+  }
+
+  let arr = [1,2,3]
+
   return (
     <>
     <h1 className='bg-slate-800 text-white p-5 mb-9 rounded text- font-medium'>Props In React</h1>
