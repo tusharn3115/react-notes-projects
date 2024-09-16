@@ -14,7 +14,7 @@ function Card({username, src}) {
       </p>
     </blockquote>
     <figcaption className="font-medium">
-      <div className="text-sky-500 dark:text-sky-400">
+      <div className="text-sky-500 dark:text-sky-400 mt-32">
         {username}
       </div>
       <div className="text-slate-700 dark:text-slate-500">
