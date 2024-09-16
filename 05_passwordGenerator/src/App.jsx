@@ -5,6 +5,13 @@ function App() {
   const [length, setLength] = useState(8)
   const [numAllow, setNumAllow] = useState(false)
   const [charAllow, setCharAllow] = useState(false)
+  const [password, setPassword] = useState("")
+
+
+  // random password generator function
+  const passwordGenerator = () => {
+    
+  }
 
   return (
     <>
