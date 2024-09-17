@@ -39,26 +39,39 @@ function App() {
       </div>
       <div className='flex text-sm gap-x-2'>
         <div className='flex items-center gap-x-1'>
-          <input 
-          type="range" 
-          min={6}
-          max={100}
-          value={length}
-          className='cursor-pointer'
-          onChange={(e) => {setLength(e.target.value)}}
+          <input
+            type="range"
+            min={6}
+            max={100}
+            value={length}
+            className='cursor-pointer'
+            onChange={(e) => { setLength(e.target.value) }}
           />
           <label className='text-base'>Length: {length}</label>
         </div>
         <div className='flex items-center gap-x-1'>
-          <input 
-          type="checkbox"
-          defaultChecked={numAllow}
-          id='numberInput'
-          onChange={(prev) => {
-            setNumAllow((prev) => !prev)
-          }}
+          <input
+            className='ml-2'
+            type="checkbox"
+            defaultChecked={numAllow}
+            id='numberInput'
+            onChange={(prev) => {
+              setNumAllow((prev) => !prev)
+            }}
           />
           <label className='text-base'>Numbers</label>
+        </div>
+        <div className='flex items-center gap-x-1'>
+          <input
+            className='ml-1'
+            type="checkbox"
+            defaultChecked={charAllow}
+            id='characterInput'
+            onChange={(prev) => {
+              setCharAllow((prev) => !prev)
+            }}
+          />
+          <label className='text-base'>Character</label>
         </div>
       </div>
     </div>
