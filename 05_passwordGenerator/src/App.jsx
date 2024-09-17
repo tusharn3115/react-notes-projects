@@ -15,7 +15,7 @@ function App() {
     if (numAllow) str += "0123456789"
     if (charAllow) str += "!@#$%&*+-"
 
-    for (let i = 1; i <= array.length; i++) {
+    for (let i = 1; i <= length; i++) {
       let char = Math.floor(Math.random() * str.length + 1)
       pass = str.charAt(char)
     }
@@ -56,6 +56,7 @@ function App() {
             defaultChecked={numAllow}
             id='numberInput'
             onChange={(prev) => {
+              // agar mai true dunga then by default jo bhi hoga true ya false toh wo ik bar work krega true hai toh every time hm checkbox ko check uncheck krenga toh true hi rhega, toh hm ik callback fire kra hai jismai jo bhi previous value hogi uska opposite joyayega every time we click the checkbox
               setNumAllow((prev) => !prev)
             }}
           />
