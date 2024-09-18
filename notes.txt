@@ -121,7 +121,7 @@ VIRTUAL DOM - what virtual DOM does is, with its help we can keep track of our w
 
 
 
-// useCallback
+// useCallback -----------------------------------------------------------------------------------
 
 - useCallback is a React Hook that lets you cache(memory) a function defination between re-renders
 
