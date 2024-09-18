@@ -24,6 +24,10 @@ function App() {
 
   }, [length, numAllow, charAllow, setPassword])
 
+  // now hme password show krwana hai agar hm direct function call krengay toh error show hoga bcoz react kb koi chij render hogi we don't control
+  
+  // passwordGenerator()
+
   return (
     <div className="w-full max-w-md mx-auto shadow-md rounded-lg px-4 py-3 my-8 text-orange-600 bg-gray-800">
       <h1 className='text-white text-center my-3'>Password generator</h1>
