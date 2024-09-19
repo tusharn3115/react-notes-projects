@@ -17,8 +17,8 @@ function App() {
 
     for (let i = 1; i <= length; i++) {
       let char = Math.floor(Math.random() * str.length + 1)
-      // pass variable mai value overwrite na ho to += lgega na ki normal equal, += se hm value ko concatinate krrhe hongay
-      pass = str.charAt(char)
+      // pass variable mai value overwrite na ho to += lgega na ki normal equal, += se hm value ko concatinate krrhe h
+      pass += str.charAt(char)
     }
 
     setPassword(pass)
@@ -34,7 +34,7 @@ function App() {
 
   return (
     <div className="w-full max-w-md mx-auto shadow-md rounded-lg px-4 py-3 my-8 text-orange-600 bg-gray-800">
-      <h1 className='text-white text-center my-3'>Password generator</h1>
+      <h1 className='text-white text-center my-4 text-xl'>Password generator</h1>
       <div className="flex shadow rounded-lg overflow-hidden mb-4">
         <input
           type="text"
