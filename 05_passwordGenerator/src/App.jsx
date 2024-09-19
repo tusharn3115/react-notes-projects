@@ -7,6 +7,19 @@ function App() {
   const [password, setPassword] = useState("")
 
 
+
+  // logic for copying the password to clipboard
+  const passwordRef = useRef(null)
+  const copyPasswordToClipborad = useCallback(() => {
+    // using reference
+    passwordRef.current?.select()
+
+    // direct method
+    window.navigator.clipboard.writeText(password)
+  }, [password])
+
+
+
   // random password generator function
   const passwordGenerator = useCallback(() => {
     let pass = ""
@@ -25,6 +38,7 @@ function App() {
 
   }, [length, numAllow, charAllow, setPassword])
 
+
   // now hme password show krwana hai agar hm direct function call krengay toh error show hoga bcoz react kb koi chij render hogi we don't control
   
   // passwordGenerator()
@@ -42,8 +56,13 @@ function App() {
           className="outline-none w-full py-1 px-3"
           placeholder="Password"
           readOnly
+          // ref
+          ref={passwordRef}
         />
-        <button className='outline-none bg-blue-700 text-white px-3 py-1 shrink-0'>Copy</button>
+        <button 
+        onClick = {copyPasswordToClipborad}
+        className='outline-none bg-blue-700 text-white px-3 py-1 shrink-0'
+        >Copy</button>
       </div>
       <div className='flex text-sm gap-x-2'>
         <div className='flex items-center gap-x-1'>
