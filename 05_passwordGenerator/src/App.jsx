@@ -1,4 +1,4 @@
-import { useCallback, useState } from 'react'
+import { useCallback, useState, useEffect } from 'react'
 
 function App() {
   const [length, setLength] = useState(8)
@@ -17,6 +17,7 @@ function App() {
 
     for (let i = 1; i <= length; i++) {
       let char = Math.floor(Math.random() * str.length + 1)
+      // pass variable mai value overwrite na ho to += lgega na ki normal equal, += se hm value ko concatinate krrhe hongay
       pass = str.charAt(char)
     }
 
@@ -27,6 +28,9 @@ function App() {
   // now hme password show krwana hai agar hm direct function call krengay toh error show hoga bcoz react kb koi chij render hogi we don't control
   
   // passwordGenerator()
+  useEffect(()=>{
+    passwordGenerator()
+  }, [length, numAllow, charAllow, passwordGenerator])
 
   return (
     <div className="w-full max-w-md mx-auto shadow-md rounded-lg px-4 py-3 my-8 text-orange-600 bg-gray-800">
