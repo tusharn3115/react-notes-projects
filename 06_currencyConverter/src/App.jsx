@@ -1,17 +1,15 @@
 import { useState } from 'react'
-import {InputBox} from './components'
+import InputBox from './components'
 import useCurrencyInfo from './hooks/useCurrencyInfo'
 
-
 function App() {
-
   const [amount, setAmount] = useState(0)
   const [from, setFrom] = useState("usd")
   const [to, setTo] = useState("inr")
   const [convertedAmount, setConvertedAmount] = useState(0)
 
-  const currencyInfo = useCurrencyInfo(from)
 
+  const currencyInfo = useCurrencyInfo(form)
   const options = Object.keys(currencyInfo)
 
   const swap = () => {
@@ -20,16 +18,16 @@ function App() {
     setConvertedAmount(amount)
     setAmount(convertedAmount)
   }
-  
+
   const convert = () => {
     setConvertedAmount(amount * currencyInfo[to])
   }
 
-  return (
+    return (
     <div
         className="w-full h-screen flex flex-wrap justify-center items-center bg-cover bg-no-repeat"
         style={{
-            backgroundImage: `url('https://images.pexels.com/photos/3532540/pexels-photo-3532540.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2')`,
+            backgroundImage: `url('https://images.pexels.com/photos/5466785/pexels-photo-5466785.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1')`,
         }}
     >
         <div className="w-full">
@@ -46,7 +44,7 @@ function App() {
                             label="From"
                             amount={amount}
                             currencyOptions={options}
-                            onCurrencyChange={(currency) => setAmount(amount)}
+                            onCurrencyChange={(currency) => setFrom(amount)}
                             selectCurrency={from}
                             onAmountChange={(amount) => setAmount(amount)}
                         />
@@ -80,4 +78,4 @@ function App() {
 );
 }
 
-export default App
+export default App;
