@@ -143,3 +143,14 @@ VIRTUAL DOM - what virtual DOM does is, with its help we can keep track of our w
 - syntax :
 
 const ref = useRef(initialValue)
+
+
+
+
+
+// react-router-dom ----------------------------------------------------------------
+
+ Link - Link in react router dom represents <a></a> tag, is <a></a> tag our browser refreshes the whole page but i react we done have the concept of react i.e the whole DOM is not create again only the places where changes are made is changed so no refresh happens, thats why we use Link in react router DOM.
+
+
+NavLink - it provides some additional feature such as 
