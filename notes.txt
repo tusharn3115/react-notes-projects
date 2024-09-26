@@ -154,3 +154,24 @@ const ref = useRef(initialValue)
 
 
 NavLink - it provides some additional feature such as 
+
+
+
+1. Outlet :
+
+- It acts as a placeholder where the child routes will be displayed.
+
+- When you're setting up a layout with multiple pages and want some common elements (like a header or sidebar) to stay consistent across different views, Outlet comes into play to display the specific content for each route.
+
+- top level per hm layout ya fir root ko rkhte hai then uske niche child routes ate hai
+
+- how to make a router, we need a RouterProvider jo ki ik wrapper hai jiske under sare hm router dete hai jo hmne bnaya hai and uske under jitne bhi routes hai unko wrap krta hai
+
+- we can make router using createBrowserRouter() method to make router, ya to hm uus method ke under array create krke then us array ke under methods bna kr ya fir createBrowserRouter() method ke under createRouterFromElement() method use krke then uske under routes dekr bna skte hai
+
+
+2. Api call :
+
+- we can call an api by using useEffect function
+
+- and we can also call an api using loader from react router 
