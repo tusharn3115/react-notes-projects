@@ -175,3 +175,22 @@ NavLink - it provides some additional feature such as
 - we can call an api by using useEffect function
 
 - and we can also call an api using loader from react router 
+
+
+
+
+
+
+User Context ------------------------------------------------------------------
+
+- Context API allows you to manage global state and share data between components without passing props down manually at every level.
+
+- abh jese hmne context bnaya to context hme major chij deta hai jisko bolte hai provider and hm isko aas a wrapper use krengay 
+
+- jese hmne usecontext ke under components ko wrap krwa diya to ab ye bn jayega provider
+
+- provider se mtlb jo bhi component usercontext ke under hai unko global usercontext ka access miljayega
+
+- context ik global variable hai
+
+- or iske under jitne bhi component hai jo usercontext ke thorough koi bhi state ka access le skte hai
