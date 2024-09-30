@@ -65,6 +65,14 @@ function App(){
 
 
 
+// useState() ---------------------------------------------------------------------
+
+
+
+
+
+
+
 
 // Understanding createRoot() method ------------------------------------------------------------------
 
@@ -90,6 +98,8 @@ VIRTUAL DOM - what virtual DOM does is, with its help we can keep track of our w
 
 - Why? It helps React smoothly manage large, complex UIs and updates without freezing the user interface.
 
+- react phele ftafat immidiately sabh kuch update krdeta tha jiseh react ke animations hit hote the i.e jese ik element update hone wala tha per ik dum seh dusra element updation ke liye agya fir tisra element bhi agya, so teeno ko update krne se acha sabko ik sath final upadate krdo
+
 
 
 
@@ -103,7 +113,7 @@ VIRTUAL DOM - what virtual DOM does is, with its help we can keep track of our w
 - It then updates only the parts of the real DOM that have changed, making the process faster and less costly.
 
 
-
+ 
 
 
 // props --------------------------------------------------------------------------------------
