@@ -12,7 +12,6 @@ export default function ThemeBtn() {
             lightTheme()
         }
     }
-}
 
 return (
     <label className="relative inline-flex items-center cursor-pointer">
@@ -27,3 +26,4 @@ return (
         <span className="ml-3 text-sm font-medium text-gray-900">Toggle Theme</span>
     </label>
 );
+}
