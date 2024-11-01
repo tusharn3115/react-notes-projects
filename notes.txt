@@ -72,8 +72,6 @@ function App(){
 
 
 
-
-
 // Understanding createRoot() method ------------------------------------------------------------------
 
 - createRoot() method behind the scene create a DOM like structure just like our browser have a DOM
